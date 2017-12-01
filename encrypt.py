@@ -19,5 +19,8 @@ def get_image(image_path):
 
 
 images = get_image("green.jpg")
-for image in images:
-	print image
+for rgb in images:
+	bin_rgb = map(lambda e: '{0:08b}'.format(e), rgb)
+	print bin_rgb
+
+
